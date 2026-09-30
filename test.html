@@ -12,10 +12,23 @@
 
     <script>
 
-      let count = Math.floor(Math.random()*10) + 4;
+      let count = Math.floor(Math.random()*100) + 5;
 
       for (let i = 0; i < count; i++) {
-        document.getElementById("cats").innerHTML += '<img src="cat.jpg" width="200">';
+        let cat_index = Math.floor(Math.random()*4);
+        let cat = "cat.jpg";
+        
+        if (cat_index == 1) {
+          cat = "cat2.jpg";
+        }
+        else if (cat_index == 2) {
+          cat = "cat3.jpg";
+        }
+        else if (cat_index == 3) {
+          cat = "cat4.jpg"
+        }
+        
+        document.getElementById("cats").innerHTML += '<img src="' + cat + '" width="200">';
       }
     </script>
    
