@@ -7,6 +7,18 @@
   <body>
     <a href="index.html">&lt; back</a>
     <p>hey</p>
-    <img src="cat.jpg">
+
+    <div id="cats"></div>
+
+    <script>
+
+      let count = Math.floor(Math.random()*10) + 4);
+
+      for (let i == 0; i < count; i++) {
+        document.getElementById("cats").innerHTML += '<img src="cat.jpg">';
+      }
+    </script>
+   
   </body>
+
 </html>
