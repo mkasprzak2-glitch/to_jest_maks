@@ -7,10 +7,37 @@
     <style>
         body { font-family: sans-serif; text-align: center; padding: 50px; background-color: #f4f4f9; }
         h1 { color: #333; }
+
+        .navbar {
+            background-color: #333;
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .tab {
+            color: .white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+
+        .tab:hover {
+            background-color: #555;
+        }
+
+        .tab.active {
+            background-color: #04AA6D;
+        }
     </style>
 </head>
+    
 <body>
+    <nav class="navbar">
+        <a href="cats.html">cats</a>
+    </nav>
+    
     <h1>maks' amazing website</h1>
-    <a href="cats.html">cats</a>
+    
 </body>
 </html>
