@@ -1,1 +1,37 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <title>test</title>
+  </head>
+  
+  <body>
+    <a href="index.html">&lt; back</a>
+    <p>hey</p>
+
+    <div id="cats"></div>
+
+    <script>
+
+      let count = Math.floor(Math.random()*100) + 5;
+
+      for (let i = 0; i < count; i++) {
+        let cat_index = Math.floor(Math.random()*4);
+        let cat = "cat.jpg";
+        
+        if (cat_index == 1) {
+          cat = "cat2.jpg";
+        }
+        else if (cat_index == 2) {
+          cat = "cat3.jpg";
+        }
+        else if (cat_index == 3) {
+          cat = "cat4.jpg"
+        }
+        
+        document.getElementById("cats").innerHTML += '<img src="' + cat + '" width="200">';
+      }
+    </script>
+   
+  </body>
+
+</html>
